@@ -80,18 +80,7 @@ ORDER BY c.customer_id, o.order_date;
 
 > **Note:** Query 4 below is currently an exact duplicate of Query 3. Consider replacing it with a different query (e.g., a three-way join across customers, orders, and order items) or removing it before submitting.
 
----
 
-### Query 4: *(Duplicate — see note above; replace with a distinct query)*
-
-```sql
-SELECT c.customer_id, c.customer_name, o.order_id, o.order_date
-FROM customers c
-LEFT JOIN orders o ON o.customer_id = c.customer_id
-ORDER BY c.customer_id, o.order_date;
-```
-
-**Explanation:** Identical logic to Query 3.
 
 ---
 
